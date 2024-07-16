@@ -1,9 +1,19 @@
+import { styled } from "styled-components";
+
 function Header() {
     return (
-        <header>
+        <HeaderStyle>
             <h1>book store</h1>
-        </header>
+        </HeaderStyle>
     );
 }
+
+const HeaderStyle = styled.header`
+    background-color: #333;
+
+    ht {
+        color: white;
+    }
+`;
 
 export default Header;
