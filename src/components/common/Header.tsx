@@ -9,11 +9,11 @@ function Header() {
 }
 
 const HeaderStyle = styled.header`
-    background-color: #333;
+background-color: ${({ theme }) => theme.color.background};
 
-    ht {
-        color: white;
-    }
+h1 {
+color: ${({ theme }) => theme.color.primary};
+}
 `;
 
 export default Header;
