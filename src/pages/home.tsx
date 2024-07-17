@@ -1,12 +1,14 @@
-import Footer from "../components/common/Footer";
-import Header from "../components/common/Header";
-import { formatNumber } from "../utils/format";
+import Title from "../components/common/Title";
 
-const COUNT = 10000;
 
 function Home() {
     return (
-        <div>book store</div>
+        <>
+        <Title size='medium' color='background'>
+            제목 테스트
+        </Title>
+        <div>home body</div>
+        </>
     );
 }
 

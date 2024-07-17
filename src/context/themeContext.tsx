@@ -39,5 +39,5 @@ export const BookStoreThemeProvider = ({ children }: { children: ReactNode }) =>
                 {children}
             </ThemeProvider>
         </ThemeContext.Provider>
-    )
-}
+    );
+};
