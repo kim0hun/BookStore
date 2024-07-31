@@ -11,40 +11,60 @@ import Books from "./pages/Books";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Layout><Home /></Layout>,
-    errorElement: <Error />
+    path: "/",
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
+    errorElement: <Error />,
   },
   {
-    path: '/books',
-    element: <Layout><Books/></Layout>
+    path: "/books",
+    element: (
+      <Layout>
+        <Books />
+      </Layout>
+    ),
   },
   {
-    path: '/signup',
-    element: <Layout><Signup /></Layout>,
+    path: "/signup",
+    element: (
+      <Layout>
+        <Signup />
+      </Layout>
+    ),
   },
   {
-    path: '/reset',
-    element: <Layout><ResetPassword /></Layout>,
+    path: "/reset",
+    element: (
+      <Layout>
+        <ResetPassword />
+      </Layout>
+    ),
   },
   {
-    path: '/login',
-    element: <Layout><Login /></Layout>,
+    path: "/login",
+    element: (
+      <Layout>
+        <Login />
+      </Layout>
+    ),
   },
   {
-    path: '/book/:bookId',
+    path: "/book/:bookId",
     element: (
       <Layout>
         <BookDetail />
       </Layout>
-    )
-  }
+    ),
+  },
 ]);
 
 function App() {
   return (
     <BookStoreThemeProvider>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </BookStoreThemeProvider>
   );
 }
