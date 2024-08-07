@@ -1,5 +1,4 @@
 import Layout from "./components/layout/Layout";
-import Home from "./pages/home";
 import { BookStoreThemeProvider } from "./context/themeContext";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./components/common/Error";
@@ -14,6 +13,7 @@ import OrderList from "./pages/OrderList";
 import { QueryClientProvider } from "react-query";
 import { queryClient } from "./api/queryClient";
 import ToastContainer from "./components/common/toast/ToastContainer";
+import Home from "./pages/Home";
 
 const routeList = [
   {
